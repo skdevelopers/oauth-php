@@ -1,4 +1,4 @@
-In this example I assume that oauth-php lives in /home/john/src/oauth-php
+In this example I assume that oauth-php lives in /home/skdev/src/oauth-php
 
 
 1) Create a virtual host and set the DB_DSN VARIABLE to the DSN of your (mysql) database.
@@ -7,14 +7,14 @@ Example
 <VirtualHost *>
         ServerAdmin admin@localhost
         ServerName hello.local
-        DocumentRoot /home/john/src/oauth-php/example/server/www
+        DocumentRoot /home/skdev/src/oauth-php/example/server/www
 
         UseCanonicalName Off
         ServerSignature On
 
         SetEnv DB_DSN mysql://foo:bar@localhost/oauth_example_server_db
 
-        <Directory "home/john/src/oauth-php/example/server/www">
+        <Directory "home/skdev/src/oauth-php/example/server/www">
                 Options Indexes FollowSymLinks MultiViews
                 AllowOverride None
                 Order allow,deny
@@ -32,13 +32,13 @@ Example
 
 2) Create the database structure for the server:
 
-# mysql -u foo -p bar -h localhost < /home/john/src/oauth-php/library/store/mysql/mysql.sql
+# mysql -u foo -p bar -h localhost < /home/skdev/src/oauth-php/library/store/mysql/mysql.sql
 
 
 
 3) Download and install smarty into the smarty/core/smarty directory:
 
-# cd /home/john/src/oauth-php/example/server/core
+# cd /home/skdev/src/oauth-php/example/server/core
 # wget 'http://www.smarty.net/do_download.php?download_file=Smarty-2.6.19.tar.gz'
 # tar zxf Smarty-2.6.19.tar.gz
 # mv Smarty-2.6.19 smarty
@@ -50,4 +50,4 @@ Example
 
 To get started.
 
-Arjan Scherpenisse <arjan@mediamatic.nl>, July 2008
+Mian Salman <admin@skdevelopers.info>, Faisalabad,Pakistan. 2016
